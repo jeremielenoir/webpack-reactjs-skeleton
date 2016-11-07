@@ -8,7 +8,20 @@ var config = {
   entry: APP_DIR + '/app.js',
   output: {
     path: BUILD_DIR,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/assets/'
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+  module: {
+    loaders:[
+      {
+        test: /\.(js|jsx)$/,
+        loaders: ['babel?cacheDirectory'],
+        include: APP_DIR
+      }
+    ]
   }
 };
 
