@@ -1,0 +1,29 @@
+{
+  "name": "webpack-reactjs-skeleton",
+  "version": "1.0.0",
+  "description": "A skeleton application with reactjs + webpack",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack.config.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremielenoir/webpack-reactjs-skeleton.git"
+  },
+  "keywords": [
+    "reactjs",
+    "webpack"
+  ],
+  "author": "Jérémie Lenoir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremielenoir/webpack-reactjs-skeleton/issues"
+  },
+  "homepage": "https://github.com/jeremielenoir/webpack-reactjs-skeleton#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "webpack": "^1.13.3"
+  }
+}
