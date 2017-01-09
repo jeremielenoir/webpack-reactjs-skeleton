@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { Router, Route, Link, hashHistory } from 'react-router'
+import About from './about.js'
 
 const App = React.createClass({
   render() {
@@ -14,12 +15,6 @@ const App = React.createClass({
         {this.props.children}
       </div>
     )
-  }
-})
-
-const About = React.createClass({
-  render() {
-    return <h3>About</h3>
   }
 })
 
@@ -39,6 +34,8 @@ const Message = React.createClass({
     return <h3>Message {this.props.params.id}</h3>
   }
 })
+
+console.log('ABOUT', About);
 
 render((
   <Router history={hashHistory}>
